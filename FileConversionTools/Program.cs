@@ -1,8 +1,6 @@
-﻿using CSharpScriptOperations;
-
-OperationManager.RegisterOperationsBulk(
+﻿OperationManager.RegisterOperationsBulk(
     new List<Type>() {
-        //typeof(TwoPlusTwo),
+        typeof(FindMislabeledMp3Files),
     }
 );
 await OperationManager.StartListeningAsync();

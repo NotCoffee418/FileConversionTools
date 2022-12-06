@@ -5,3 +5,5 @@ global using System.Text;
 global using System.Threading.Tasks;
 global using CliWrap;
 global using CliWrap.Buffered;
+global using CSharpScriptOperations;
+global using FileConversionTools.Operations;
