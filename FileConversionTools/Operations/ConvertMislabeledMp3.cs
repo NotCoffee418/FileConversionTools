@@ -33,6 +33,9 @@ public class ConvertMislabeledMp3 : IOperation
             "Didn't find all files. Would you like to convert the remaining?", defaultAnswer: false))
             return;
 
+        if (!UserInput.PoseBoolQuestion($"This will convert {filesToConvert.Count} files. Is this ok?"))
+            return;
+
         // Prep temp dir
         string baseTempDir = Path.Combine(Path.GetTempPath(), "convert-mislabeled-mp3");
         if (Directory.Exists(baseTempDir))
