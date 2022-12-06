@@ -3,7 +3,7 @@
 [OperationDescription("[ffprobe] Find mislabeled mp3 files")]
 public class FindMislabeledMp3Files : IOperation
 {
-    const string ResultsFilePath = "missing-mp3-files.txt";
+    public const string ResultsFilePath = "missing-mp3-files.txt";
     public async Task RunAsync()
     {
         Console.WriteLine("ffprobe must be in PATH for this to work.");
